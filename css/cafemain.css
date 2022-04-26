@@ -15,8 +15,19 @@
     height: 400px;
 }
 
+.title_circle{
+    position: absolute;     /* 子要素は親から見た絶対位置 */
+    top: 0%;
+    left: 10%; 
+    width: 100px;
+    height: 100px; 
+    background-color: gray;
+    border-radius: 50%;     /* ←円を作る */
+}
 .title img{
     position: absolute;     /* 子要素は親から見た絶対位置 */
+    top: 10%;
+    left:0%;
     width: 100%;
     height: 100%;
 }
