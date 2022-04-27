@@ -4,20 +4,33 @@
     --title_left_posi: 100px;
 }
 
+header{
+    background: lightblue;
+    height: 100px;
+}
 .content h2{
     display:none;
 }
 
+.main{
+    position: relative;     /* 親要素は相対位置 */ 
+    background: blue;
+
+}
 .title{
-    position: relative;     /* 親要素は相対位置 */
-/*    border: 5px solid red;*/
+    position: absolute;     /* 子要素は絶対位置 */ 
+/*    top: 0%;
+    left: 0%; */
+    border: 5px solid red;
     background: pink;
-    height: 400px;
+    display:block;
+/*    width: 100px;
+    height: 400px;*/
 }
 
 .title_circle{
     position: absolute;     /* 子要素は親から見た絶対位置 */
-    top: 0%;
+    top: -10%;
     left: 10%; 
     width: 100px;
     height: 100px; 
@@ -25,9 +38,9 @@
     border-radius: 50%;     /* ←円を作る */
 }
 .title img{
-    position: absolute;     /* 子要素は親から見た絶対位置 */
-    top: 10%;
-    left:0%;
+/*    position: absolute;*/     /* 子要素は親から見た絶対位置 */
+/*   top: 10%;*/
+/*    left:0%;*/
     width: 100%;
     height: 100%;
 }
@@ -36,7 +49,7 @@
     position: absolute;     /* 子要素は親から見た絶対位置 */
     color:white;
     top: 35%;
-    left: 30%; 
+    left: 30%;
 /*    top: var(--title_top_posi);
     left: var(--title_left_posi); */
 }
@@ -45,7 +58,7 @@
     position: absolute;     /* 子要素は親から見た絶対位置 */
     color:white;
     top: 50%;
-    left: 30%; 
+    left: 30%;
 /*    top: calc(var(--title_top_posi) + 50px);
     left: var(--title_left_posi); */
 }
